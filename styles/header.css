@@ -1,0 +1,268 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    background-color: rgb(42, 4, 71);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-block-color: rgb(232, 227, 227);
+    z-index: 1;
+
+}
+.search-bar{
+    flex:1;
+    height: 36px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 0;
+
+}
+.search-bar::placeholder{
+    font-family: arial,Roboto;
+    font-size: 16qpx;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.ut2{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ut1{
+    height: 50px;
+    width: 150px;
+   
+}
+.middle{
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    z-index: 1px;
+    
+
+}
+.ut3{
+    height: 25px;
+    width: 60px;
+    margin-top: 4px;
+}
+.button1{
+    height: 38px;
+    border-style: solid;
+    border-color: gray;
+    background-color:rgb(235,235,235);
+    border-width:1px;
+    border-color:gray;
+    margin: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    z-index: 200;
+
+}
+.tooltip{
+    margin-left: 30px;
+}
+.button1 .tooltip{
+    position: relative;
+    background-color: gray;
+    color:RED;
+    padding-left: 4px;
+    padding-right: 18;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -4px;
+    opacity:0;
+}
+.button1:hover .tooltip{
+    opacity: 1;
+}
+.ut4{
+    height: 30px;
+    margin-bottom: px;
+}
+.button2{ 
+   border-radius: 20px;
+   height: 40pxpx;
+   width: 40px;
+   border:none;
+   display:flex;
+   align-items: center;
+   padding-right: 35px;
+   padding-top: 9px;
+
+}
+.right{
+width: 200px;
+align-items: center;
+display:flex;
+justify-content: space-between;
+margin-right: 20px;
+flex-shrink: 0;
+}
+
+.ut5{
+    height: 20px;
+}
+.ut6{
+    height: 24px;
+}
+.ut7{
+    height: 24px;
+}
+.ut7x{
+    position: relative;
+}
+.count{
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: -2px;
+    right: -5px;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-right:5px ;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+.ut8{
+    height: 32px;
+    border-radius: 16px;
+}
+*{
+  
+    padding:0;
+
+ }
+ .menu-bar{
+     background-color:rgb(255, 255, 255);
+     overflow: hidden;
+     background-color: #fc0606;
+
+ }
+ .menu-bar ul{
+    overflow: hidden;
+    float: left;
+ }
+ .menu-bar ul li{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 15px;
+  margin: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  list-style: none;
+ }
+ .menu-bar ul li a{
+     text-decoration: none;
+     color:rgb(245, 251, 245);
+ }
+ .active, .menu-bar ul li:hover{
+     background-color: orange;
+     border-radius: 3px;}
+ .menu-bar .icon {
+        display: none;
+      }
+
+ .sub-menu1{
+     display: none;
+ }
+ .menu-bar ul li:hover .sub-menu1{
+     display: block;
+     position: absolute;
+     background: blue;
+     border-radius: 4px;
+ }
+ .sub-menu1 ul li{
+    float: none;
+
+ }
+ .menu-bar ul li:hover .sub-menu1 ul{
+     display: block;
+     margin: 10px;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li{
+     width: 100px;
+     padding: 10px;
+     border-bottom: 1px dotted #ffff;
+     background: transparent;
+     text-align: left;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li:hover{
+     background-color:black;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li:last-child{
+     border-bottom: none;
+ }
+ .menu-bar ul li:hover .sub-menu1 ul li a:hover{
+     background-color:transparent;
+     padding-left: 30px;
+     padding-top: 15PX;
+     padding-bottom: 15PX;
+     padding-right: 30PX;
+     margin-left:-4px;
+     position: relative;
+     top: 0;
+     left: 0;
+ }
+ @media screen and (max-width: 600px) {
+    .menu-bar ul li:not(:first-child) {display: none;}
+    .menu-bar ul li.icon {
+      float: right;
+      display: block;
+      margin-left: 320px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .menu-bar ul.responsive {position: relative;}
+    .menu-br ul li.responsive .icon {
+      position: absolute;
+      right:0;
+      top: 0;
+    }
+    .menu-bar ul.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+.menu-bar ul li.icon{
+    display:;
+}
+
+ .home{
+    height: 15px;
+ }
+ .ugadama{
+    font-family: impact;
+    color: yellow;
+ }
+ .humbager-menu{
+    height: 20px;
+ }
